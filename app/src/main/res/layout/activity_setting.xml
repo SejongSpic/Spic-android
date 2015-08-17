@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:weightSum="3"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/setting"
+            android:id="@+id/tv_appSettingName" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginTop="20dp">
+            <SeekBar
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/red_scrubber_progress"
+                android:thumb="@drawable/red_scrubber_control"
+                android:max="3"
+                android:id="@+id/sb_height" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:text="PITCH"
+                android:id="@+id/tv_strHeight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_marginTop="20dp">
+            <SeekBar
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/red_scrubber_progress"
+                android:thumb="@drawable/red_scrubber_control"
+                android:max="3"
+                android:id="@+id/sb_speed" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:text="SPEED"
+                android:id="@+id/tv_strSpeed" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    </LinearLayout>
+
+</LinearLayout>
